@@ -4,8 +4,10 @@ Estos ejemplos de código fueron desarrollados para ayudar en la comprensión de
 
 ## Contenido
 
-Este repositorio plantea el desarrollo de aplicaciones web utilizando [**Vue 3**][l1] para el frontend y [**Laravel 12**][l2] para el backend.
+Este repositorio contiene ejemplos de código para el desarrollo de aplicaciones web utilizando [**Vue 3**][l1] para el frontend y [**Laravel 12**][l2] para el backend.
 
+Para utilizarlo, se recomienda [leer la documentación][l3].
 
 [l1]: https://vuejs.org/
 [l2]: https://laravel.com/
+[l3]: Documentación/README.md
