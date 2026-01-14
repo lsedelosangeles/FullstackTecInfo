@@ -15,6 +15,6 @@ Estos documentos complementan el contenido de la **[Guía de Desarrollo de Front
 - [Pinia: Manejo de Estado a nivel global][l1]
 
 [l1]: Pinia_ManejoDeEstadosGlobales.md
-[l6]: ../../Código/Frontend/
+[l6]: ../../Código/Frontend/notas-base/
 [l7]: ../Backend/README.md
 [l8]: https://docs.google.com/document/d/1KLCvbKVAmCcO2F4eVnVi3brDR44-f2TV7XvzVANVjtw/edit?usp=sharing
