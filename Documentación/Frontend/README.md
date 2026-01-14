@@ -4,13 +4,22 @@ Esta serie de documentos contiene los pasos básicos para desarrollar un fronten
 
 Estos documentos complementan el contenido de la **[Guía de Desarrollo de FrontEnd con Vue.js (con Vite) y TailwindCSS][l8]**.
 
-> **Nota:** En los archivos mencionados por esta documentación se pueden ubicar los cambios mencionados, o que se consideren importantes **buscando los comentarios** que comienzan por la palabra clave `FRONTEND` de la siguiente forma:
+> **Nota:** En los archivos mencionados por esta documentación se pueden ubicar los cambios mencionados, o que se consideren importantes **buscando los comentarios** que comienzan por la palabra clave `FRONTEND` tal como se puede ver aquí:
 
 ```js
 //FRONTEND:
 ```
 
-## Contenido:
+## Contenido
+
+1. Introducción
+    1. Requerimientos y preparación del IDE
+    1. Funcionamiento de un frontend con Vue
+1. Creación de un nuevo proyecto de Vue
+    1. Crear e inicializar el proyecto
+    1. Agregar librerías
+1. Estructuras básicas
+    1. Secciones de un compon
 
 - [Pinia: Manejo de Estado a nivel global][l1]
 
