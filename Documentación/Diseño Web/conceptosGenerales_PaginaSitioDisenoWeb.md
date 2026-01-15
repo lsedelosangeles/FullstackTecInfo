@@ -70,5 +70,8 @@ Se trata de un dispositivo de red que permite a los dispositivos de una red (por
 
 ***
 
+## Siguiente: [El Servidor Web][siguiente]
+
 [inicio]: #página-web-vs-sitio-web-vs-diseño-web-vs-programación-web
+[siguiente]: funcServicioWeb_Servidor.md
 [l1]: https://www.seciu.edu.uy/institucional/presentacion
