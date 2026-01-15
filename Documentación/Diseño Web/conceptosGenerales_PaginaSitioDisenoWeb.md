@@ -5,8 +5,10 @@
 ### Contenido
 
 1. [Página Web](#página-web)
-2. [Sitio Web](#sitio-web)
-3. [Diseño Web](#diseño-web)
+1. [Sitio Web](#sitio-web)
+1. [Diseño Web](#diseño-web)
+1. [Programación Web](#programación-web)
+1. [Glosario](#glosario)
 
 ***
 
@@ -64,6 +66,9 @@ Significa *Domain Name System* (en español: *Sistema de Nombres de Dominio*). S
 
 Se trata de un dispositivo de red que permite a los dispositivos de una red (por ejemplo, una LAN), comunicarse con los dispositivos de otra red (por ejemplo, Internet).
 
+[*Volver al Inicio*][inicio]
+
 ***
+
 [inicio]: #página-web-vs-sitio-web-vs-diseño-web-vs-programación-web
 [l1]: https://www.seciu.edu.uy/institucional/presentacion
