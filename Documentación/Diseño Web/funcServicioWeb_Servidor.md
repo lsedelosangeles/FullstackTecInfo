@@ -11,7 +11,7 @@
 
 ## Concepto
 
-Un servidor web es una aplicación que, al ejecutarse, permite acceder, mediante **peticiones HTTP**, al contenido de sitios web alojados en el almacenamiento de la computadora.
+Un servidor web es una aplicación que, al ejecutarse, permite acceder, mediante [**peticiones HTTP**](../glosario.md), al contenido de sitios web alojados en el almacenamiento de la computadora.
 
 Existen muchos ejemplos, siendo los más populares:
 
