@@ -4,7 +4,7 @@
 
 ### Contenido
 
-1. Concepto
+1. [Concepto](#concepto)
 2. Funcionamiento básico
 
 ***
@@ -18,5 +18,14 @@ Existen muchos ejemplos, siendo los más populares:
 - [Apache HTTP Server][l1]
 - [nginx][l2]
 
+Para ello, se debe configurar **explicitamente** cada instancia del servidor que usaremos para indicarle qué directorios contienen los archivos que el mismo debe manejar, y cómo debe hacerlo.
+
+***
+
+## Funcionamiento Básico
+
+Los servidores web, por descarte, envían información a cualquier cliente que haga solicitudes mediante el protocolo [**HTTP**][l3]
+
 [l1]: https://httpd.apache.org/
 [l2]: https://nginx.org/
+[l3]: ../glosario.md#http

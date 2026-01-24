@@ -18,8 +18,12 @@ Estos documentos complementan el contenido de la **[Guía de Desarrollo de Front
 1. Creación de un nuevo proyecto de Vue
     1. Crear e inicializar el proyecto
     1. Agregar librerías
+    1. Estructura de directorios y archivos
+        1. Directorios principales
+        1. Archivos principales
 1. Estructuras básicas
-    1. Secciones de un compon
+    1. Secciones de un componente de Vue
+    1. 
 
 - [Pinia: Manejo de Estado a nivel global][l1]
 

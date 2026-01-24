@@ -42,6 +42,10 @@ Se trata de un dispositivo de red que permite a los dispositivos de una red (por
 
 ***
 
+## HTTP
+
+***
+
 ## Solicitud o Petición HTTP
 
 Una petición HTTP es un mensaje que un **[cliente](#cliente)** (como ser un [**navegador web**][l3]) envía a un **[servidor web][l2]** para obtener o enviar datos, usando métodos como `GET` (obtener), `POST` (enviar), `PUT` (actualizar/crear) y `DELETE` (eliminar). Estas peticiones siguen una estructura estándar (mensaje HTTP) que incluye una línea de solicitud (método, URL, versión), cabeceras (información adicional) y, opcionalmente, un cuerpo con datos.
