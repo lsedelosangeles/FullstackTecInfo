@@ -1,6 +1,6 @@
 @startuml DiagramaMVC
 skinparam actorStyle awesome
-skinparam sequenceMessageAlign direction
+
 <style>
     root {
         FontColor #?black:white
