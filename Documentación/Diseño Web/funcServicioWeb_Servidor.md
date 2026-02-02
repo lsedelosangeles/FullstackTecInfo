@@ -24,7 +24,11 @@ Para ello, se debe configurar **explicitamente** cada instancia del servidor que
 
 ## Funcionamiento Básico
 
-Los servidores web, por descarte, envían información a cualquier cliente que haga solicitudes mediante el protocolo [**HTTP**][l3]
+Los servidores web, por descarte, envían información a cualquier cliente que haga solicitudes mediante el protocolo [**HTTP**][l3].
+
+Esta comunicación se logra, por lo general, mediante una conección abierta en el puerto 80 (tráfico sin encriptar), o los puertos 443 ó 8080 (tráfico encriptado mediante SSL/TLS).
+
+
 
 [l1]: https://httpd.apache.org/
 [l2]: https://nginx.org/
