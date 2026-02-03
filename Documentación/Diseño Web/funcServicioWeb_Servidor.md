@@ -34,11 +34,28 @@ Las solicitudes HTTP tienen esta estructura:
 1. Si la conexión es exitosa, el cliente envía una **[petición][l4]**, formada de la siguiente manera:
 
     1. ***Método***: Especifica la forma en que se envían los datos de la petición, la naturaleza de la misma (lo que se quiere lograr con la petición), y cómo se esperan los datos de la respuesta.
+
+    - Los métodos más comunes suelen ser:
+
+        - `GET` para ***obtener*** *recursos o registros públicos*
+        - `POST` para ***crear*** *registros nuevos*
+        - `PUT` para ***actualizar*** *registros existentes*
+        - `DELETE` para ***eliminar*** *registros existentes*
+
     1. ***Ruta***: La ubicación del recurso solicitado, ya sea real (un archivo en un directorio específico), o virtual (una funcionalidad que debe ejecutarse en el servidor).
     1. ***Versión del protocolo***
-    1. ***Cabeceras HTTP***: Complementos
+    1. ***Cabeceras HTTP***: Complementos que aportan información extra al servidor sobre la petición.
+    1. ***Cuerpo del mensaje (opcional)***: Información que acompaña a la petición. Este componente de la solicitud es muy importante para métodos como `POST` o `PUT`, que lo utilizan para transmitir la información de la misma.
+
+1. El servidor recibe y procesa la solicitud y emite una **[respuesta][l5]**. De forma semejante a las solicitudes, las respuestas tienen una estructura:
+
+    1. ***Versión del protocolo***
+    1. ***Código de Estado***: Indica si la petición ha sido exitosa o no, y qué tipo de problemas hubo.
+    1. ***Mensaje de Estado***: Complementa y expande el elemento anterior
+    1. ***Cabeceras HTTP***: Complementos que aportan información extra al servidor sobre la petición.
 
 [l1]: https://httpd.apache.org/
 [l2]: https://nginx.org/
 [l3]: ../glosario.md#http
 [l4]: ../glosario.md#solicitud-o-petición-http
+[l5]: ../glosario.md#respuesta-http
