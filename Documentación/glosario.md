@@ -44,6 +44,12 @@ Se trata de un dispositivo de red que permite a los dispositivos de una red (por
 
 ## HTTP
 
+El *Protocolo de Transferencia de HiperTexto* es un protocolo de la *capa de aplicación* para la transmisión de documentos hipermedia, como ser HTML. Fue diseñado para la comunicación entre los navegadores y servidores web, aunque se puede utilizar para otros propósitos. Sigue el modelo clásico de **Cliente - Servidor**: un cliente establece una conexión con el servidor, realiza una **[petición](#solicitud-o-petición-http)** y espera hasta que recibe una respuesta del mismo. Se trata de un protoclo que no maneja **[estados](#estado-de-la-aplicación)**, ya que el servidor no conserva ningún dato de la petición del cliente luego que termina de responder al mismo. Maneja, sin embargo, **sesiones**, que permiten al servidor identificar al cliente en solicitudes posteriores.
+
+Suele utilizar conexiones tipo TCP/IP, pero puede utilizar otros tipos de conexión como ser UDP.
+
+[*Volver al Inicio*][inicio]
+
 ***
 
 ## Solicitud o Petición HTTP
@@ -61,6 +67,22 @@ Una petición HTTP es un mensaje que un **[cliente](#cliente)** (como ser un [**
 ***
 
 ## Servidor
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Estado de la Aplicación
+
+Es el conjunto de datos contenidos en la memoria RAM (variables, archivos abiertos, punteros, etc.) que caracterízan un momento dado de la ejecución de una aplicación.
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Sesión
+
+
 
 [*Volver al Inicio*][inicio]
 
