@@ -35,12 +35,12 @@ Las solicitudes HTTP tienen esta estructura:
 
     1. ***Método***: Especifica la forma en que se envían los datos de la petición, la naturaleza de la misma (lo que se quiere lograr con la petición), y cómo se esperan los datos de la respuesta.
 
-    - Los métodos más comunes suelen ser:
-
-        - `GET` para ***obtener*** *recursos o registros públicos*
-        - `POST` para ***crear*** *registros nuevos*
-        - `PUT` para ***actualizar*** *registros existentes*
-        - `DELETE` para ***eliminar*** *registros existentes*
+        - Los métodos más comunes suelen ser:
+    
+            - `GET` para ***obtener*** *recursos o registros públicos*
+            - `POST` para ***crear*** *registros nuevos*
+            - `PUT` para ***actualizar*** *registros existentes*
+            - `DELETE` para ***eliminar*** *registros existentes*
 
     1. ***Ruta***: La ubicación del recurso solicitado, ya sea real (un archivo en un directorio específico), o virtual (una funcionalidad que debe ejecutarse en el servidor).
     1. ***Versión del protocolo***
