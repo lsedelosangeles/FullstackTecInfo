@@ -2,6 +2,8 @@
 
 >**Nota Importante:** Este glosario de términos técnicos **no esta ordenado alfabéticamente**. Para encontrar un término, se recomienda usar la búsqueda en página para localizarlos (`Ctrl` + `F` en la mayoría de los navegadores).
 
+***
+
 ## Dominio, o Nombre de Dominio
 
 Se refiere a la dirección única que identifica a un sitio web en Internet. Esta compuesto por un **nombre de segundo nivel** (ejemplo: `www.google`, `www.ceibal`, etc.), *que se indica primero*, y un **dominio de nivel superior** (ejemplo: `.com`, `.com.uy`, `.edu.uy`, `.org`, etc), *que se indica por último*. Los dominios deben adquirirse (más allá de que algunas plataformas ofrezcan sub-dominios gratuitos bajo ciertas condiciones), son otorgados por **organismos reguladores**, ante los cuales deben solicitarse (como ser el [*Servicio Central de Informática de la UdelaR*][l1] en Uruguay), y son manejados a nivel global por el [**DNS**](#dns)
@@ -91,6 +93,19 @@ Es el conjunto de datos contenidos en la memoria RAM (variables, archivos abiert
 ***
 
 ## Sesión
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Puertos
+
+Los **puertos de red**, o simplemente puertos, son un mecanismo utilizado para permitir que una máquina realice **varias conexiones simultáneas a otras máquinas** de modo que los datos contenidos en los paquetes entrantes se dirijan al proceso que los está esperando. Los puertos se identifican por un número comprendido entre 0 y 65.535.
+
+Para acceder a un servicio de red, que esté ejecutándose en un dispositivo de la red, y que utilice un puerto determinado, simplemente debemos enviar nuestras solicitudes a la URL (o el IP) del dispositivo que ejecuta el servicio, seguido por el **número de puerto** que utiliza el servicio (por ejemplo `80`), separados por dos puntos (y sin espacios), de la siguiente manera:
+
+- Con una URL: `http:\\url.del.dispositivo : 80`
+- Con un IP: `http\\101.102.103.104 : 80`
 
 [*Volver al Inicio*][inicio]
 
