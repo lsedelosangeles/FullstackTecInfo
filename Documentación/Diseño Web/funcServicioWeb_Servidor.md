@@ -5,7 +5,8 @@
 ### Contenido
 
 1. [Concepto](#concepto)
-2. [Funcionamiento Básico](#funcionamiento-básico)
+1. [Funcionamiento Básico](#funcionamiento-básico)
+1. [Configuración](#configuración)
 
 ***
 
@@ -59,6 +60,23 @@ Las solicitudes HTTP tienen esta estructura:
 
 Dependiendo de la naturaleza exacta de la solicitud, el navegador cliente, en este punto, recibiría contenido HTML, archivos, scripts, etc.
 
+[*Volver al Inicio*][inicio]
+
+***
+
+## Configuración
+
+Para que este funcionamiento sea posible, los servidores web requieren, normalmente, cierto grado de configuración.
+
+Entre otros, se puede (o debe) configurar:
+
+- Ubicación del directorio que contiene los archivos que componen el sitio web.
+- Permisos de acceso sobre directorios y/o archivos específicos.
+- Complementos que habiliten funcionalidad extra (intérpretes, bases de datos, etc.)
+- Hosts virtuales (varias URL que apuntan a un solo dispositivo).
+- Etc.
+
+Esto se realiza modificando ciertos archivos de configuración, que suelen ser sencillos de ubicar.
 
 [*Volver al Inicio*][inicio]
 
