@@ -82,7 +82,10 @@ Esto se realiza modificando ciertos archivos de configuración, que suelen ser s
 
 ***
 
+## Siguiente: [El Navegador Web][siguiente]
+
 [inicio]:#el-servidor-web
+[siguiente]: funcServicioWeb_Navegador.md
 [l1]: https://httpd.apache.org/
 [l2]: https://nginx.org/
 [l3]: ../glosario.md#http
