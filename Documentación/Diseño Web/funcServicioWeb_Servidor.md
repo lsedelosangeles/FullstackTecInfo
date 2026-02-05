@@ -60,6 +60,8 @@ Las solicitudes HTTP tienen esta estructura:
 
 Dependiendo de la naturaleza exacta de la solicitud, el navegador cliente, en este punto, recibiría contenido HTML, archivos, scripts, etc.
 
+Para profundizar en este tema, se recomienda leer el [artículo correspondiente en la MDN][l7].
+
 [*Volver al Inicio*][inicio]
 
 ***
@@ -92,3 +94,4 @@ Esto se realiza modificando ciertos archivos de configuración, que suelen ser s
 [l4]: ../glosario.md#solicitud-o-petición-http
 [l5]: ../glosario.md#respuesta-http`
 [l6]: ../glosario.md#puertos
+[l7]: https://developer.mozilla.org/es/docs/Web/HTTP

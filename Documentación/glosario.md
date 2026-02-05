@@ -1,6 +1,6 @@
 # Glosario
 
->**Nota Importante:** Este glosario de términos técnicos **no esta ordenado alfabéticamente**. Para encontrar un término, se recomienda usar la búsqueda en página para localizarlos (`Ctrl` + `F` en la mayoría de los navegadores).
+>**Nota Importante:** Este glosario de términos técnicos **no esta ordenado alfabéticamente** (aunque se lo intente ordenar de vez en cuando). Para encontrar un término, se recomienda usar la **búsqueda en página** para localizarlos (`Ctrl` + `F` en la mayoría de los navegadores).
 
 ***
 
@@ -102,10 +102,32 @@ Es el conjunto de datos contenidos en la memoria RAM (variables, archivos abiert
 
 Los **puertos de red**, o simplemente puertos, son un mecanismo utilizado para permitir que una máquina realice **varias conexiones simultáneas a otras máquinas** de modo que los datos contenidos en los paquetes entrantes se dirijan al proceso que los está esperando. Los puertos se identifican por un número comprendido entre 0 y 65.535.
 
-Para acceder a un servicio de red, que esté ejecutándose en un dispositivo de la red, y que utilice un puerto determinado, simplemente debemos enviar nuestras solicitudes a la URL (o el IP) del dispositivo que ejecuta el servicio, seguido por el **número de puerto** que utiliza el servicio (por ejemplo `80`), separados por dos puntos (y sin espacios), de la siguiente manera:
+Para acceder a un servicio de red, que esté ejecutándose en un dispositivo de la red, y que utilice un puerto determinado, simplemente debemos enviar nuestras solicitudes a la URL (o el IP) del dispositivo que ejecuta el servicio, seguido por el **número de puerto** que utiliza el servicio (por ejemplo `80`), separados por dos puntos (y **sin espacios**), de la siguiente manera:
 
 - Con una URL: `http:\\url.del.dispositivo : 80`
 - Con un IP: `http\\101.102.103.104 : 80`
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Hipertexto e Hipermedia
+
+Se denomina **Hipertexto** a todo texto que, al ser visualizado en un **[navegador web][l5]** permite, no solo la lectura del mismo, sino que además, mediante secciones interactivas del mismo, denominadas **hipervínculos**, habilita al lector la posibilidad de acceder, o *"navegar"*, hacia otras zonas del documento, otros documentos, u otros archivos. Además, un hipertexto puede contener, en su código o mediante vínculos, **scripts** ejecutables, que añaden funcionalidad y profundizan la interactividad del mismo.
+
+La **Hipermedia** es la combinación de hipertexto con elementos multimedia como ser imágenes, audio, video, de forma interactiva, permitiendo capacidades de navegación e interacción iguales que las del hipertexto.
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Estilo
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Scripts
 
 [*Volver al Inicio*][inicio]
 
@@ -116,3 +138,4 @@ Para acceder a un servicio de red, que esté ejecutándose en un dispositivo de 
 [l2]: Diseño%20Web/funcServicioWeb_Servidor.md
 [l3]: Diseño%20Web/funcServicioWeb_Navegador.md
 [l4]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
+[l5]:Diseño%20Web/funcServicioWeb_Navegador.md
