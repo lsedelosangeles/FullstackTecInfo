@@ -52,6 +52,8 @@ En su forma básica, un navegador web moderno consiste de tres secciones:
 [g1]:../glosario.md#hipertexto-e-hipermedia
 [g2]:../glosario.md#estilo
 [g3]:../glosario.md#scripts
+[g4]:../glosario.md#páginas-web
+[g5]:../glosario.md#sitios-web
 
 [l1]: https://www.w3.org/
 

@@ -1,0 +1,30 @@
+/*propiedades responsive básicas*/
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+/*Tamaños*/
+
+.ancho_100{ width: 100%; }
+.ancho_050{ width: 50%; }
+.ancho_075{ width: 75%; }
+.ancho_025{ width: 25%; }
+
+.alto_100{ height: 100%; }
+.alto_050{ height: 50%; }
+.alto_075{ height: 75%; }
+.alto_025{ height: 25%; }
+
+.relativo { position: relative; }
+.absoluto { position: absolute; }
+.fijo { position: fixed; }
+
+.rojo { background-color: red; }
+.azul { background-color: blue; }
+.verde { background-color: green; }
+.amarillo { background-color: yellow; }
+
+.flotar { float: left; }

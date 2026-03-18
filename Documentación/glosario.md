@@ -133,6 +133,18 @@ La **Hipermedia** es la combinación de hipertexto con elementos multimedia como
 
 ***
 
+## Páginas Web
+
+[*Volver al Inicio*][inicio]
+
+***
+
+## Sitios Web
+
+[*Volver al Inicio*][inicio]
+
+***
+
 [inicio]: #glosario
 [l1]: https://www.seciu.edu.uy/institucional/presentacion
 [l2]: Diseño%20Web/funcServicioWeb_Servidor.md
