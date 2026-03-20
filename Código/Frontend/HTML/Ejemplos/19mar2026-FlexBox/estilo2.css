@@ -1,0 +1,47 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.base{
+    width: 100%;
+    height: 100%;
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedor{
+    width: 75%;
+    height: 20%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-columna{
+    flex-direction: column;
+}
+
+.caja{
+    width: 50px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 200ms;
+}
+
+.caja:hover{
+    background-color: orange;
+    width: 200px;
+}
+
+.caja:active{
+    
+}
