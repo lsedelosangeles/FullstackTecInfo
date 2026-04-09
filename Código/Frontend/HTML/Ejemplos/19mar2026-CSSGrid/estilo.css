@@ -7,6 +7,13 @@ html,body{
 .caja{
     border: 1px solid black;
     border-radius: 15px;
+    background-color: grey;
+    transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 500ms;
+    
+}
+
+.caja:hover{
+    background-color: black;
 }
 
 .base{
@@ -27,3 +34,4 @@ html,body{
     row-gap: 10px;
     overflow-y: scroll;
 }
+

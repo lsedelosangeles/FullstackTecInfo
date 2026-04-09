@@ -1,0 +1,29 @@
+@startuml "Librería: Casos de Uso"
+
+header "BT TecInfo - Programación FullStack"
+title "Librería: Casos de Uso (v1)"
+footer "Prof. Luis Sebastián de los Ángeles - 2026\nCC BY-NC-SA 4.0"
+
+(Listado de Libros) as c1
+(Detalle del Libro) as c2
+(Agregar Nuevo Libro) as c3
+
+note "Click en el\ntítulo del libro" as d1
+note "Click en\nbotón 'X'" as d2
+note "Click en botón\n'Nuevo Libro'" as d3
+note "Click en\nbotón 'Cancelar'" as d4
+
+c1 -d-> d1
+d1 -d-> c2 
+
+c2 -u-> d2
+d2-u-> c1 
+
+c1 -r-> d3
+d3 -r-> c3
+
+c3 -d-> d4
+d4 -d->c1
+
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml "Librería: Componentes v1"
+
+[App] as app
+package "Lista de Libros" as listaLibros {
+    [ListadoLibros] as listadoLibros 
+    [Libro] as libro
+}
+
+
+app --> listaLibros
+listadoLibros --> libro : contiene
+
+@enduml
