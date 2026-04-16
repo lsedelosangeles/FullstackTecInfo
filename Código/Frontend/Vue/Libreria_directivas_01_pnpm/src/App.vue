@@ -1,6 +1,10 @@
 <script setup>
 import { ref } from 'vue';
 
+import libros from '../../Libreria/recursos/libros.json'
+
+const lista_libros = libros.libros
+
 const verTelon = ref(false)
 
 const mostrarTelon = () => {
@@ -37,7 +41,12 @@ const mostrarTelon = () => {
     </div>
     <div class="contenido">
       <div class="listado">
-
+        <div class="datosLibro" v-for="libro in lista_libros">
+          <h3>{{ libro.titulo }}</h3>
+          <h4>{{ libro.autor }}</h4>
+          <h4>{{ libro.editorial }}</h4>
+          <h5>{{ libro.genero }}</h5>
+        </div>
       </div>
     </div>
 
@@ -102,6 +111,7 @@ const mostrarTelon = () => {
   background-color: #fdfbdf;
   border-radius: 20px;
   border: 3px #49461c solid;
+  overflow-y: scroll;
 }
 
 .nuevoLibro {
@@ -194,5 +204,24 @@ const mostrarTelon = () => {
 
 .cerrar::after {
   content: "x";
+}
+
+.datosLibro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  height: 20%;
+  border-bottom: solid 1px black;
+  margin-top: 20px;
+}
+
+.datosLibro h3 {
+  grid-column: span 2;
+  margin: 0;
+}
+
+.datosLibro h4,
+.datosLibro h5 {
+  margin: 0;
 }
 </style>

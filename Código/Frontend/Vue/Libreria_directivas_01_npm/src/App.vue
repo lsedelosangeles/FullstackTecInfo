@@ -37,7 +37,12 @@ const mostrarTelon = () => {
     </div>
     <div class="contenido">
       <div class="listado">
-
+        <div class="datosLibro">
+          <h3>Título</h3>
+          <h4>Autor</h4>
+          <h4>Editorial</h4>
+          <h5>Género</h5>
+        </div>
       </div>
     </div>
 
@@ -45,6 +50,11 @@ const mostrarTelon = () => {
 </template>
 
 <style scoped>
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 250ms;
+}
+
 .base {
   position: absolute;
   top: 0px;
