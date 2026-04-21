@@ -8,12 +8,9 @@
 </template>
 
 <script setup>
-const libro = {
-    "titulo": "A",
-    "autor": "B",
-    "editorial": "C",
-    "genero": "D"
-}
+defineProps([
+    'libro'
+])
 </script>
 
 <style scoped>

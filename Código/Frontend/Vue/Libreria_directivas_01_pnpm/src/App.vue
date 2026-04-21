@@ -43,7 +43,7 @@ const mostrarTelon = () => {
     </div>
     <div class="contenido">
       <div class="listado">
-        <datosLibro v-for="libro in lista_libros">
+        <datosLibro v-for="libro in lista_libros" :libro="libro">
 
         </datosLibro>
       </div>
