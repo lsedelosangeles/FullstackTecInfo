@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue';
+import datosLibro from './components/datosLibro.vue';
 
 import libros from '../../Libreria/recursos/libros.json'
+import DatosLibro from './components/datosLibro.vue';
 
 const lista_libros = libros.libros
 
@@ -41,12 +43,9 @@ const mostrarTelon = () => {
     </div>
     <div class="contenido">
       <div class="listado">
-        <div class="datosLibro" v-for="libro in lista_libros">
-          <h3>{{ libro.titulo }}</h3>
-          <h4>{{ libro.autor }}</h4>
-          <h4>{{ libro.editorial }}</h4>
-          <h5>{{ libro.genero }}</h5>
-        </div>
+        <datosLibro v-for="libro in lista_libros">
+
+        </datosLibro>
       </div>
     </div>
 
