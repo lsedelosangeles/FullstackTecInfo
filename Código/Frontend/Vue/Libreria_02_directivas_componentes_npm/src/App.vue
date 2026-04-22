@@ -1,10 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import DatosLibro from './components/DatosLibro.vue';
-
-import libros from './assets/libros.json'
-
-const lista_libros = libros.libros
 
 const verTelon = ref(false)
 
@@ -42,8 +37,12 @@ const mostrarTelon = () => {
     </div>
     <div class="contenido">
       <div class="listado">
-        <DatosLibro v-for="libro in lista_libros" :key="libro.isbn" :libro="libro">
-        </DatosLibro>
+        <div class="datosLibro">
+          <h3>Título</h3>
+          <h4>Autor</h4>
+          <h4>Editorial</h4>
+          <h5>Género</h5>
+        </div>
       </div>
     </div>
 
@@ -51,6 +50,11 @@ const mostrarTelon = () => {
 </template>
 
 <style scoped>
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 250ms;
+}
+
 .base {
   position: absolute;
   top: 0px;
@@ -108,8 +112,6 @@ const mostrarTelon = () => {
   background-color: #fdfbdf;
   border-radius: 20px;
   border: 3px #49461c solid;
-  overflow-y: scroll;
-  padding: 20px;
 }
 
 .nuevoLibro {

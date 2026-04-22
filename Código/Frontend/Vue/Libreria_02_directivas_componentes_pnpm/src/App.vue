@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from 'vue';
-import DatosLibro from './components/DatosLibro.vue';
+import datosLibro from './components/datosLibro.vue';
 
-import libros from './assets/libros.json'
+import libros from '../../Libreria/recursos/libros.json'
+import DatosLibro from './components/datosLibro.vue';
 
 const lista_libros = libros.libros
 
@@ -42,8 +43,9 @@ const mostrarTelon = () => {
     </div>
     <div class="contenido">
       <div class="listado">
-        <DatosLibro v-for="libro in lista_libros" :key="libro.isbn" :libro="libro">
-        </DatosLibro>
+        <datosLibro v-for="libro in lista_libros" :libro="libro">
+
+        </datosLibro>
       </div>
     </div>
 
@@ -109,7 +111,6 @@ const mostrarTelon = () => {
   border-radius: 20px;
   border: 3px #49461c solid;
   overflow-y: scroll;
-  padding: 20px;
 }
 
 .nuevoLibro {
@@ -202,5 +203,24 @@ const mostrarTelon = () => {
 
 .cerrar::after {
   content: "x";
+}
+
+.datosLibro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  height: 20%;
+  border-bottom: solid 1px black;
+  margin-top: 20px;
+}
+
+.datosLibro h3 {
+  grid-column: span 2;
+  margin: 0;
+}
+
+.datosLibro h4,
+.datosLibro h5 {
+  margin: 0;
 }
 </style>
