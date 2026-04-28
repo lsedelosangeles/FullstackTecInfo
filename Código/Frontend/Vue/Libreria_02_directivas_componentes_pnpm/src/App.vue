@@ -4,6 +4,7 @@ import datosLibro from './components/datosLibro.vue';
 
 import libros from '../../Libreria/recursos/libros.json'
 import DatosLibro from './components/datosLibro.vue';
+import NuevoLibro from './components/NuevoLibro.vue';
 
 const lista_libros = libros.libros
 
@@ -13,25 +14,18 @@ const mostrarTelon = () => {
   verTelon.value = !(verTelon.value)
 }
 
+const guardarLibro = (libro) => {
+  console.log(libro)
+  lista_libros.push(libro)
+  mostrarTelon()
+}
+
 </script>
 
 <template>
   <div class="telon" v-if="verTelon">
-    <div class="nuevoLibro">
-      <div class="cerrar" @click="mostrarTelon()"></div>
-      <h2>Nuevo Libro</h2>
-      <div class="formulario">
-        <label for="isbn">ISBN:</label><input type="number" id="isbn">
-        <label for="titulo">Título:</label><input type="text" id="titulo">
-        <label for="autor">Autor:</label><input type="text" id="autor">
-        <label for="genero">Genero:</label><input type="text" id="genero">
-        <label for="editorial">Editorial:</label><input type="text" id="editorial">
-        <label for="anio_publicacion">Año de Publicación:</label><input type="number" placeholder="YYYY" min="1900"
-          max="2100" id="anio_publicacion">
-        <label for="precio_uyu">Precio ($U):</label><input type="number" id="precio_uyu" min="0" placeholder="$U">
-      </div>
-      <div class="boton btnAgregarLibro">Agregar Libro</div>
-    </div>
+    <NuevoLibro @cerrar="mostrarTelon()" @guardar="guardarLibro">
+    </NuevoLibro>
   </div>
 
   <div class="base">
