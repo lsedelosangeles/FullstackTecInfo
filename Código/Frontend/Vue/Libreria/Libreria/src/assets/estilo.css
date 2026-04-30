@@ -15,10 +15,19 @@ html, body{
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
 h1{
     font-size: 3em;
 }
 
 h2{
     font-size: 2em;
+}
+
+.sombra_1{
+    -webkit-box-shadow: 5px 5px 15px -4px #000000;
+    box-shadow: 5px 5px 15px -4px #000000;
 }
