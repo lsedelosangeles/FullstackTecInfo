@@ -1,4 +1,7 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
+
 </script>
 
 <template>
@@ -10,7 +13,10 @@
             <label for="contrasenia">Contraseña:</label>
             <input type="password" id="contrasenia">
             <p></p>
-            <button>Iniciar Sesión</button>
+            <router-link to="">
+                <div class="boton btnLogin">Iniciar Sesion</div>
+            </router-link>
+
             <p></p>
         </div>
     </div>
@@ -18,22 +24,13 @@
 </template>
 
 <style scoped>
-.base {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: #F2EBE3;
-    justify-content: center;
-    align-items: center;
-}
-
 .principal {
     width: 25vw;
     height: 40vh;
     min-height: 320px;
     min-width: 330px;
     border-radius: 30px;
-    background-color: white;
+    background-color: var(--membrillo-amarillo);
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4, 50px);
@@ -46,6 +43,7 @@
     font-size: 30px;
     grid-column: span 2;
     text-align: center;
+    color: var(--membrillo-fucsia);
 }
 
 .principal label {
@@ -56,11 +54,16 @@
 .principal input {
     height: 2em;
     border: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
     outline: none;
-    transition: all 1500ms;
+    transition: all 200ms;
     font-size: 1em;
     text-align: center;
+    border-radius: 10px;
+}
+
+.principal input:focus {
+    border-bottom: 4px solid #333;
 }
 
 .principal button {
@@ -72,5 +75,9 @@
     border-radius: 10px;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.btnLogin {
+    background-color: var(--membrillo-amarillo-claro-1);
 }
 </style>

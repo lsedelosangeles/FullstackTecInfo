@@ -28,6 +28,65 @@ h2{
 }
 
 .sombra_1{
-    -webkit-box-shadow: 5px 5px 15px -4px #000000;
-    box-shadow: 5px 5px 15px -4px #000000;
+    -webkit-box-shadow: 4px 4px 12px -8px #000;
+    box-shadow: 4px 4px 12px -8px #000;
+}
+
+:root{
+    --membrillo-amarillo: #fee843ff;
+    --membrillo-amarillo-claro-1: #FEF18A;
+    --membrillo-amarillo-claro-2:#FFF6B8;
+    --membrillo-fucsia: #ff015cff;
+    --membrillo-verde: #00d49dff;
+    --membrillo-azul: #0085b6ff;
+    --membrillo-amarillo-borde: #ffba00ff;
+    --membrillo-gris: #999999ff;
+    --membrillo-blanco: #fefefeff;
+}
+/* CSS HEX 
+
+*/
+/* CSS HSL 
+--banana-cream: hsla(53, 99%, 63%, 1);
+--hot-fuchsia: hsla(339, 100%, 50%, 1);
+--emerald: hsla(164, 100%, 42%, 1);
+--ocean-blue: hsla(196, 100%, 36%, 1);
+--amber-flame: hsla(44, 100%, 50%, 1);
+--grey-olive: hsla(0, 0%, 60%, 1);
+--white: hsla(0, 0%, 100%, 1);
+*/
+
+.fuente-logo {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.base {
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-color: var(--membrillo-blanco);
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    border-radius: 30px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #999;
+    transition: all 100ms;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+}
+
+.boton:hover{
+    border-bottom: 3px solid #111;
+}
+
+.boton:active{
+    border-bottom: 1px solid #999;
 }
