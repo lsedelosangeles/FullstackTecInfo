@@ -36,13 +36,14 @@ const randomColor = (() => {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+    width: 100%;
     height: 25%;
     padding-bottom: 10px;
     border-bottom: solid 1px black;
 }
 
 .datosLibro h2 {
+    grid-column: span 2;
     margin-bottom: 10px;
     margin-top: 10px;
 }

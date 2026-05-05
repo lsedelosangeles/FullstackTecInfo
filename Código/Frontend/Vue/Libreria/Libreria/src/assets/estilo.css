@@ -64,6 +64,7 @@ h2{
 
 .base {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 85vh;
     background-color: var(--membrillo-blanco);

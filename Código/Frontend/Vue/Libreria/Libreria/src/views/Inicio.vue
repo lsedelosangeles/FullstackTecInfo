@@ -13,7 +13,7 @@ import { RouterLink } from 'vue-router';
             <label for="contrasenia">Contraseña:</label>
             <input type="password" id="contrasenia">
             <p></p>
-            <router-link to="">
+            <router-link to="/listado">
                 <div class="boton btnLogin">Iniciar Sesion</div>
             </router-link>
 
