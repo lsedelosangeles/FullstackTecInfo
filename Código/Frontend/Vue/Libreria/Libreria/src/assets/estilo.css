@@ -84,6 +84,10 @@ h2{
     color: #000;
 }
 
+a>.boton{
+    text-decoration: 
+}
+
 .boton:hover{
     border-bottom: 3px solid #111;
 }
