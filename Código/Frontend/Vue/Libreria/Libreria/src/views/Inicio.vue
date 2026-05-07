@@ -13,8 +13,8 @@ import { RouterLink } from 'vue-router';
             <label for="contrasenia">Contraseña:</label>
             <input type="password" id="contrasenia">
             <p></p>
-            <router-link to="/listado">
-                <div class="boton btnLogin">Iniciar Sesion</div>
+            <router-link to="/listado" class="boton btnLogin">
+                Iniciar Sesion
             </router-link>
 
             <p></p>
@@ -78,6 +78,7 @@ import { RouterLink } from 'vue-router';
 }
 
 .btnLogin {
+    grid-column: span 2;
     background-color: var(--membrillo-amarillo-claro-1);
 }
 </style>
