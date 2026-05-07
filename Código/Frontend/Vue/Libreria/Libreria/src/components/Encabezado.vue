@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     position: relative;
     left: 0;
     width: 100vw;

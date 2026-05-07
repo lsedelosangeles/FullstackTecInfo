@@ -1,0 +1,31 @@
+<script setup>
+import { useRoute } from 'vue-router';
+import libros from '../assets/libros.json'
+import { computed } from 'vue';
+
+const parametros = useRoute()
+const isbn = parametros.params.isbn
+
+const lista_libros = libros.libros
+
+
+const filtro_libros = computed(() => {
+    const category = parametros.params.isbn
+    return lista_libros.filter(item => item.isbn === category)
+})
+
+const libro = filtro_libros.value[0]
+</script>
+
+
+
+<template>
+    <router-link to="/listado">Volver</router-link>
+    <div>
+        <h1>{{ libro.titulo }}</h1>
+        <h2>{{ libro.autor }}</h2>
+        <p>{{ libro.isbn }}</p>
+    </div>
+</template>
+
+<style scoped></style>

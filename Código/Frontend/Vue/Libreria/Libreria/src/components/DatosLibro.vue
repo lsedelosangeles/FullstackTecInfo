@@ -1,4 +1,7 @@
 <script setup>
+import { ref } from 'vue';
+import { RouterLink } from 'vue-router';
+
 const props = defineProps([
     'libro'
 ])
@@ -22,7 +25,9 @@ const randomColor = (() => {
 
 <template>
     <div class="datosLibro">
-        <h2>{{ libro.titulo }}</h2>
+        <router-link :to="{ name: 'libro', params: { isbn: libro.isbn } }">
+            <h2>{{ libro.titulo }}</h2>
+        </router-link>
         <h3>{{ libro.autor }}</h3>
         <h4>Editorial: {{ libro.editorial }}, {{ libro.anio_publicacion }}</h4>
         <h4>Género: {{ libro.genero }}</h4>
@@ -42,10 +47,12 @@ const randomColor = (() => {
     border-bottom: solid 1px black;
 }
 
-.datosLibro h2 {
+.datosLibro a {
     grid-column: span 2;
     margin-bottom: 10px;
     margin-top: 10px;
+    color: black;
+    text-decoration: none;
 }
 
 .datosLibro h3 {
