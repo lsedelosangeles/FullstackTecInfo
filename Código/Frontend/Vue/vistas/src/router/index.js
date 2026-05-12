@@ -1,4 +1,5 @@
 import Inicio from '@/views/Inicio.vue'
+import Primera from '@/views/Primera.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -8,6 +9,11 @@ const router = createRouter({
       path:"/",
       component:Inicio,
       name:'inicio'
+    },
+    {
+      path:'/primera',
+      component: Primera,
+      name:'primera'
     }
   ],
 })
