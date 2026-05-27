@@ -8,7 +8,7 @@ const isbn = parametros.params.isbn
 
 const lista_libros = libros.libros
 
-//Filtro: retorna un array
+//Filtro: retorna un array con elementos
 const filtro_libros = computed(() => {
     return lista_libros.filter(item => item.isbn === isbn)
 })

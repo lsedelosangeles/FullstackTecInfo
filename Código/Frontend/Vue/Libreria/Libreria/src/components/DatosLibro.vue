@@ -2,24 +2,15 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 
+//Función para generar un color al azar para la 'portada' de los
+// libros en el listado
+import { randomColor } from '@/assets/funciones';
+
 const props = defineProps([
     'libro'
 ])
 
-const randomColor = (() => {
-    "use strict";
 
-    const randomInt = (min, max) => {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    };
-
-    return () => {
-        var h = randomInt(0, 360);
-        var s = randomInt(42, 98);
-        var l = randomInt(40, 90);
-        return `hsl(${h},${s}%,${l}%)`;
-    };
-})();
 
 </script>
 

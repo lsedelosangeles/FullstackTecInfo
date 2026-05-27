@@ -1,0 +1,28 @@
+{
+"elementos":[
+    {
+        "id":0,
+        "info":"rojo"
+    },
+    {
+        "id":1,
+        "info":"azul"
+    },
+    {
+        "id":2,
+        "info":"verde"
+    },
+    {
+        "id":3,
+        "info":"blanco"
+    },
+    {
+        "id":4,
+        "info":"negro"
+    },
+    {
+        "id":5,
+        "info":"amarillo"
+    }
+]
+}
