@@ -27,7 +27,9 @@ a:link {
 
 .boton {
     display: flex;
-    width: 15vw;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;

@@ -1,22 +1,19 @@
 <script setup>
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { useNotasStore } from '@/stores/notas';
 
 const almacen = useNotasStore()
-
-const notas = ref({
-    'notas': []
-})
+const router = useRouter()
 
 const nota = ref({
-    'id': notas.value.notas.length,
     'titulo': '',
-    'texto': '',
-
+    'texto': ''
 })
 
 const guardarNota = (nuevaNota) => {
-    almacen.guardarNota(nuevaNota)
+    almacen.nuevaNota(nuevaNota)
+    router.push('/')
 }
 </script>
 
@@ -29,7 +26,7 @@ const guardarNota = (nuevaNota) => {
     <input v-model="nota.texto" type="text" id="texto"><br>
     <br>
     <div class="botones">
-        <div class="boton">Agregar Nota</div>
+        <div class="boton" @click="guardarNota(nota)">Agregar Nota</div>
         <router-link to="/">
             <div class="boton">Cancelar</div>
         </router-link>

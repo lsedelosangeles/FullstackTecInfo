@@ -3,7 +3,8 @@ import { defineStore } from "pinia";
 
 export const useNotasStore = defineStore(
     'notas', () => {
-  
+      
+  //Almacén Principal
   const notas = ref([
     {   
         id: 1, 
@@ -18,16 +19,20 @@ export const useNotasStore = defineStore(
   ])
   
   // Contador para el próximo ID 
-  const siguienteId = ref(notas.value.length + 1)
+  const siguienteId = computed(()=>notas.value.length + 1)
 
   // Acciones del Almacén
   // Agregar una nueva nota
-  const nuevaNota = (titulo, texto) => {
+  const nuevaNota = (notaNueva) => {
+    
+    let idNueva = siguienteId.value
+
     notas.value.push({
-      id: cantidad(),
-      titulo: titulo,
-      texto: texto
+      id: idNueva,
+      titulo: notaNueva.titulo,
+      texto: notaNueva.texto
     })
+    alert("Nota "+ idNueva +" fue agregada")
     //nextId.value++ // Incrementamos el ID para la siguiente nota
   }
 
