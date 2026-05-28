@@ -11,6 +11,7 @@ export const useNotasStore = defineStore(
         titulo: 'Comprar materiales', 
         texto: 'Hojas A4 y marcadores para la clase.'
     },
+
     { 
         id: 2, 
         titulo: 'Abitab', 
@@ -19,22 +20,25 @@ export const useNotasStore = defineStore(
   ])
   
   // Contador para el próximo ID 
-  const siguienteId = computed(()=>notas.value.length + 1)
+  const siguienteId = computed(
+    ()=>notas.value.length + 1
+  )
 
   // Acciones del Almacén
   // Agregar una nueva nota
   const nuevaNota = (notaNueva) => {
     
     let idNueva = siguienteId.value
-
-    notas.value.push({
+    const nn = {
       id: idNueva,
       titulo: notaNueva.titulo,
       texto: notaNueva.texto
-    })
+    }
+
+    notas.value.push(nn)
+
     alert("Nota "+ idNueva +" fue agregada")
-    //nextId.value++ // Incrementamos el ID para la siguiente nota
-  }
+    }
 
   // Función para eliminar una nota por su ID
   const borrarNota = (id) => {
