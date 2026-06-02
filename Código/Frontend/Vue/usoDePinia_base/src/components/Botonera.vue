@@ -1,5 +1,6 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
+const router = useRouter()
 </script>
 
 <template>
@@ -7,6 +8,9 @@ import { RouterLink } from 'vue-router';
         <router-link to="/notas/nueva">
             <div class="boton">Agregar Nota</div>
         </router-link>
+
+
+
         <router-link to="/notas">
             <div class="boton">Ver Todas las Notas</div>
         </router-link>

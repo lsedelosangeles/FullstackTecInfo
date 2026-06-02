@@ -1,6 +1,7 @@
 <script setup>
 import { useNotasStore } from '@/stores/notas';
 
+
 const almacenNotas = useNotasStore()
 </script>
 
