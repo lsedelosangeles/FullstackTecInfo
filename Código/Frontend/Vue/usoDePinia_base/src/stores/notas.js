@@ -21,7 +21,7 @@ export const useNotasStore = defineStore(
   
   // Contador para el próximo ID 
   const siguienteId = computed(
-    ()=>notas.value.findLast().id+1
+    ()=>notas.value.length+1
   )
 
   // Acciones del Almacén
