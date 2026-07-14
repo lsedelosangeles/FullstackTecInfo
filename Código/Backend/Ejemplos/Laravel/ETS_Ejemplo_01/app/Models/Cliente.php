@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Model;
 
 
-#[Table('clientes', key:'ci')]
+#[Table('clientes', key:'ci', keyType:'int', incrementing:'false')]
 #[Fillable(['ci', 'nombre', 'apellido', 'direccion'])]
 class Cliente extends Model
 {

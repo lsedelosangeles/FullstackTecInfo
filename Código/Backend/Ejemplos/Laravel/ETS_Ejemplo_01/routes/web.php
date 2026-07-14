@@ -13,4 +13,19 @@ Route::get('/clientes',
         [ClienteController::class, 'verTodos']
 );
 
+Route::get(
+    '/cliente/ci/{ci}',
+    [ClienteController::class, 'buscar']
+);
+
+// Agregar un nuevo cliente
+Route::post('/clientes', [ClienteController::class, 'store']);
+
+Route::get(
+    '/cliente/nuevo',
+    function(){
+        return view('formularioClientes');
+    }
+);
+
 require __DIR__.'/settings.php';
