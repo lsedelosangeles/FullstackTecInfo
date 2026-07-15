@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\PruebasController;
 
 Route::inertia('/', 'Welcome')->name('home');
 
@@ -26,6 +27,10 @@ Route::get(
     function(){
         return view('formularioClientes');
     }
+);
+
+Route::get('/pruebas',
+    [PruebasController::class, 'probar']
 );
 
 require __DIR__.'/settings.php';
