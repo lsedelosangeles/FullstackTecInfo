@@ -19,7 +19,7 @@ return new class extends Migration
 
             //Claves Foráneas
             $table->unsignedInteger('cliente_ci');
-            $table->foreign('cliente_ci')->references('ci')->on('cliente')->onDelete('cascade');
+            $table->foreign('cliente_ci')->references('ci')->on('clientes')->onDelete('cascade');
 
         });
     }
