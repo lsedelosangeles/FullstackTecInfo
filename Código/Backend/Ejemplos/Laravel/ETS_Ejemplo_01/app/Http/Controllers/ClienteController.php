@@ -22,6 +22,9 @@ class ClienteController extends Controller
         return response()->json($cliente, 200);
     }
 
+    /**
+     * Muestra todos los clientes registrados
+     */
     public function verTodos(){
         $clientes = Cliente::all();
         return response()->json($clientes, 200);
