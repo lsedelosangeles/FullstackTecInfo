@@ -10,7 +10,8 @@ class ClienteController extends Controller
 {
     //
     public function buscar(int $ci){
-        $cliente = Cliente::with('pedidos')->find($ci);//find($ci);
+        //$cliente = Cliente::find($ci);
+        $cliente = Cliente::with('pedidos')->find($ci);//
 
         if (!$cliente) {
             return response()->json([
