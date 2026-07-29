@@ -18,7 +18,14 @@ class ClienteFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'ci' => fake()->unique()
+                ->randomNumber(8,strict:true),
+            'nombre' => fake('es_ES')
+                ->firstName(),
+            'apellido'=> fake('es_ES')
+                ->lastName(),
+            'direccion'=> fake('es_ES')
+                ->address(),
         ];
     }
 }
