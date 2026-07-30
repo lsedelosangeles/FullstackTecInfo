@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -7,17 +8,28 @@
             <h1>Hola</h1>
         </div>
         <div class="botonera">
-            <div class="boton botonAmarillo">Iniciar Sesión</div>
-            <div class="boton botonAmarillo">Registrarse</div>
+            <router-link class="boton boton-amarillo-claro-1" to="/login">
+                Iniciar Sesión
+            </router-link>
+            
+        <router-link class="boton boton-verde" to="/registro">
+            Registrarse
+        </router-link>
+            
         </div>
 
     </div>
 </template>
 
 <style scoped>
-.botonAmarillo {
-    background-color: var(--membrillo-amarillo);
+
+.encabezado{
+    height: 10vh;
 }
 
-.botonera {}
+.botonera {
+    height: 10vh;
+    display: flex;
+
+}
 </style>

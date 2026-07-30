@@ -35,9 +35,13 @@ h2{
 :root{
     --membrillo-amarillo: #fee843ff;
     --membrillo-amarillo-claro-1: #FEF18A;
+    --membrillo-amarillo-claro-1-osc-A: #FDEB5D;
+    --membrillo-amarillo-claro-1-osc-B: #FCDF03;
     --membrillo-amarillo-claro-2:#FFF6B8;
     --membrillo-fucsia: #ff015cff;
     --membrillo-verde: #00d49dff;
+    --membrillo-verde-A: #00D431;
+    --membrillo-verde-B: #00A3D4;
     --membrillo-azul: #0085b6ff;
     --membrillo-amarillo-borde: #ffba00ff;
     --membrillo-gris: #999999ff;
@@ -74,15 +78,16 @@ h2{
 
 .boton{
     border-radius: 30px;
-    height: 40px;
+    height: 5vh;
     border: none;
     border-bottom: 1px solid #999;
     transition: all 200ms;
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 2vh;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 5px;
     color: #000;
     text-decoration: none;
 }
@@ -100,3 +105,33 @@ h2{
 .boton:active{
     border-bottom: 1px solid #999;
 }
+
+a div{
+    text-decoration: line-through;
+    
+}
+
+.boton-amarillo-claro-1{
+    background-color: var(--membrillo-amarillo-claro-1);
+}
+
+.boton-amarillo-claro-1:hover{
+    background-color: var(--membrillo-amarillo-claro-1-osc-A);
+}
+
+.boton-amarillo-claro-1:active{
+    background-color: var(--membrillo-amarillo-claro-1-osc-B);
+}
+
+.boton-verde{
+    background-color: var(--membrillo-verde);
+}
+
+.boton-verde:hover{
+    background-color: var(--membrillo-verde-A);
+}
+
+.boton-verde:active{
+    background-color: var(--membrillo-verde-B);
+}
+
