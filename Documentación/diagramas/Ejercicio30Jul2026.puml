@@ -1,0 +1,41 @@
+@startuml Ejercicio30jul2026
+
+entity Editoriales{
+    nombre
+    direccion
+    telefono
+}
+
+diamond a
+diamond b
+diamond c
+diamond d
+
+entity Libros{
+    titulo
+    autor
+}
+
+entity Generos{
+    nombre
+    descripcion
+}
+
+entity Pedidos{
+    fecha
+    estado:enum(activo,cancelado,enviado)
+}
+
+Editoriales "1" -r- a
+a -r-> "n" Libros
+
+Libros "1" -d- b
+b -d-> "n" Generos
+
+Editoriales "1" -l- c
+c -d-> "n" Pedidos
+
+Pedidos "1" -r- d
+d -u-> "n   " Libros
+
+@enduml
