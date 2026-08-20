@@ -21,6 +21,7 @@ export const useAuthStore = defineStore(
                 await api.get('/sanctum/csrf-cookie')
 
                 // 2. Hace la petición de login
+                //await api.post('/api/login2', credenciales)
                 await api.post('/login', credenciales)
 
                 // 3. Obtiene los datos del usuario autenticado

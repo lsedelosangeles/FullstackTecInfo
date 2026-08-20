@@ -24,7 +24,10 @@ return Application::configure(basePath: dirname(__DIR__))
             AddLinkHeadersForPreloadedAssets::class,
         ]);
 
-        $middleware->statefulApi(); //MUY IMPORTANTE
+        //MUY IMPORTANTE
+        $middleware->statefulApi(); 
+        // 
+        
         $middleware->redirectGuestsTo(fn()=>redirect()->away(env('FRONTEND_URL').'/login'));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
