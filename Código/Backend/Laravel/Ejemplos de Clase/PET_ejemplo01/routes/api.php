@@ -11,13 +11,5 @@ Route::get('/user', function (Request $request) {
 Route::get(
     '/clientes',
     [ClienteController::class,'index']
-)->middleware('auth');
-
-
-Route::post('/login2',
-    function(Request $request){
-        if ($request->has('email')) {
-            return response()->json([$request->all()],200);
-        }
-    }
-);
+)
+->middleware('auth');

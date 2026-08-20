@@ -16,7 +16,8 @@ const verClientes = async () => {
     try {
         await api.get('/sanctum/csrf-cookie')
 
-        const respuesta = await api.get('/clientes')
+        const respuesta = await api.get('/api/clientes')
+
         clientes.value = respuesta.data
         console.log(clientes.value)
         alert("OK")
