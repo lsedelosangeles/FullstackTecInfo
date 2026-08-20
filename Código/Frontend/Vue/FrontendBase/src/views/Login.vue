@@ -3,6 +3,7 @@ import { ref, reactive, onMounted } from 'vue';
 import { useAuthStore } from '@/stores/auth';
 import { useRouter } from 'vue-router';
 
+
 const router = useRouter()
 const authStore = useAuthStore()
 
@@ -21,10 +22,10 @@ const hacerLogin = async () => {
     errores.value = {}
 
     try {
-        //console.log(datosFormulario.email)
         await authStore.login(datosFormulario)
-        //alert('Login OK')
-        //router.push()
+
+        router.push('/clientes')
+
     } catch (error) {
         if (error.response?.status === 422) {
             // Errores de validación de campos (p. ej. credenciales incorrectas o formato inválido)
@@ -67,8 +68,10 @@ onMounted(() => {
                 <!-- Campo: Email -->
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
+
                     <input id="email" v-model="datosFormulario.email" type="email" placeholder="usuario@ejemplo.com"
                         :class="{ 'input-error': errores.email }" :disabled="cargando" required />
+
                     <!-- Error específico del campo devuelto por Laravel -->
                     <span v-if="errores.email" class="error-text">
                         {{ errores.email[0] }}
@@ -86,13 +89,13 @@ onMounted(() => {
                 </div>
 
                 <!-- Botón de Envío con Estado de Carga -->
-                 <div class="form-group">
+                <div class="form-group">
                     <button type="submit" class="boton boton-amarillo-claro-1" :disabled="cargando">
                         <span v-if="cargando" class="spinner"></span>
                         <span>{{ cargando ? 'Ingresando...' : 'Iniciar Sesión' }}</span>
                     </button>
-                 </div>
-                
+                </div>
+
             </form>
         </div>
     </div>
