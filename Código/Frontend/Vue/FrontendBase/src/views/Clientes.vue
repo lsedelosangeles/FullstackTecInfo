@@ -16,7 +16,7 @@ const verClientes = async () => {
     try {
         await api.get('/sanctum/csrf-cookie')
 
-        const respuesta = await api.get('/api/clientes')
+        const respuesta = await api.get('/clientes')
         clientes.value = respuesta.data
         console.log(clientes.value)
         alert("OK")
@@ -42,10 +42,17 @@ onMounted(
 
 <template>
     <div v-if="cargando">Esperando datos...</div>
-    <div @click="verClientes()">Cargar</div>
+    <div class="boton boton-verde" @click="verClientes()">Cargar</div>
     <Cliente v-for="cliente in clientes" :cliente="cliente" :pedidos="cliente.pedidos" :key="cliente.ci">
     </Cliente>
 
 </template>
 
-<style scoped></style>
+<style scoped>
+.boton {
+    width: 10vw;
+    border: 1px solid grey;
+    border-radius: 20px;
+
+}
+</style>
