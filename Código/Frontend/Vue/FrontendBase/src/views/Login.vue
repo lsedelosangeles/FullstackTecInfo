@@ -21,8 +21,9 @@ const hacerLogin = async () => {
     errores.value = {}
 
     try {
+        console.log(datosFormulario.email)
         await authStore.login(datosFormulario)
-        alert('Login OK')
+        //alert('Login OK')
         //router.push()
     } catch (error) {
         if (error.response?.status === 422) {
@@ -57,7 +58,7 @@ const hacerLogin = async () => {
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
                     <input id="email" v-model="datosFormulario.email" type="email" placeholder="usuario@ejemplo.com"
-                        :class="{ 'input-error': errores.email }" :disabled="loading" required />
+                        :class="{ 'input-error': errores.email }" :disabled="cargando" required />
                     <!-- Error específico del campo devuelto por Laravel -->
                     <span v-if="errores.email" class="error-text">
                         {{ errores.email[0] }}
@@ -68,17 +69,20 @@ const hacerLogin = async () => {
                 <div class="form-group">
                     <label for="password">Contraseña</label>
                     <input id="password" v-model="datosFormulario.password" type="password" placeholder="••••••••"
-                        :class="{ 'input-error': errores.password }" :disabled="loading" required />
+                        :class="{ 'input-error': errores.password }" :disabled="cargando" required />
                     <span v-if="errores.password" class="error-text">
                         {{ errores.password[0] }}
                     </span>
                 </div>
 
                 <!-- Botón de Envío con Estado de Carga -->
-                <button type="submit" class="boton boton-amarillo-claro-1" :disabled="loading">
-                    <span v-if="loading" class="spinner"></span>
-                    <span>{{ loading ? 'Ingresando...' : 'Iniciar Sesión' }}</span>
-                </button>
+                 <div class="form-group">
+                    <button type="submit" class="boton boton-amarillo-claro-1" :disabled="cargando">
+                        <span v-if="cargando" class="spinner"></span>
+                        <span>{{ cargando ? 'Ingresando...' : 'Iniciar Sesión' }}</span>
+                    </button>
+                 </div>
+                
             </form>
         </div>
     </div>

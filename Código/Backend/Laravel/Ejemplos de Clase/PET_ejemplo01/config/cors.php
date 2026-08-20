@@ -15,7 +15,8 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    // ASEGURARSE DE HABILITAR LA RUTA UNIVERSAL '*' EN ESTE OBJETO
+    'paths' => ['*','api/*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
 
