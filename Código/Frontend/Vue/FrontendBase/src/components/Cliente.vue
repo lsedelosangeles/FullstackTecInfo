@@ -10,7 +10,7 @@ defineProps([
 
 <template>
 
-    <h2>{{ cliente.nombre }} {{ cliente.apellido }}</h2>
+    <h2>{{ cliente.apellido }}, {{ cliente.nombre }}</h2>
     <b>CI: </b>{{ cliente.ci }}<br>
     <b>Dirección: </b>{{ cliente.direccion }}<br>
     <br>

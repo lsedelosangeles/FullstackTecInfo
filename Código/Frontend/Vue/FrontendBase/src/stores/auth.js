@@ -16,7 +16,7 @@ export const useAuthStore = defineStore(
         getters: {},
 
         actions: {
-            async login (credenciales) {
+            async login(credenciales) {
                 // 1. Obtenemos la cookie CSRF de Sanctum (petición requerida antes del login)
                 await api.get('/sanctum/csrf-cookie')
 

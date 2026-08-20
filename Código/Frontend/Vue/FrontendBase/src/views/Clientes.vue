@@ -2,6 +2,7 @@
 import { ref, computed, onMounted } from 'vue';
 import api from '@/services/api';
 import Cliente from '@/components/Cliente.vue';
+import router from '@/router';
 
 const clientes = ref([])
 const cargando = ref(true)
@@ -23,6 +24,9 @@ const verClientes = async () => {
         error.value = exc.response?.data?.message
         alert("ERROR") //OJITO CON ESTO COLEGA
         console.log("Error: " + error.value)
+        if (error.value == 'Unauthenticated.') {
+            router.push('/login')
+        }
     }
     finally {
         cargando.value = false

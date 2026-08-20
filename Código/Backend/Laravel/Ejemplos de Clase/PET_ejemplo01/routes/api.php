@@ -11,4 +11,4 @@ Route::get('/user', function (Request $request) {
 Route::get(
     '/clientes',
     [ClienteController::class,'index']
-);
+)->middleware('auth');

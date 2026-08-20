@@ -24,7 +24,8 @@ return Application::configure(basePath: dirname(__DIR__))
             AddLinkHeadersForPreloadedAssets::class,
         ]);
 
-        $middleware->statefulApi(); //MUY IUM
+        $middleware->statefulApi(); //MUY IMPORTANTE
+        $middleware->redirectGuestsTo(fn()=>redirect()->away(env('FRONTEND_URL').'/login'));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(
