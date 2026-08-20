@@ -1,9 +1,15 @@
 <script setup>
 import { RouterView } from 'vue-router';
+import Encabezado from './components/Interfaz/Encabezado.vue';
 </script>
 
 <template>
-  <router-view></router-view>
+  <encabezado></encabezado>
+  <router-view class="" ></router-view>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .inicio{
+    height: 85vh;
+  }
+</style>

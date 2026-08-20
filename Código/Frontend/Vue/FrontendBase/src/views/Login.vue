@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive } from 'vue';
+import { ref, reactive, onMounted } from 'vue';
 import { useAuthStore } from '@/stores/auth';
 import { useRouter } from 'vue-router';
 
@@ -21,7 +21,7 @@ const hacerLogin = async () => {
     errores.value = {}
 
     try {
-        console.log(datosFormulario.email)
+        //console.log(datosFormulario.email)
         await authStore.login(datosFormulario)
         //alert('Login OK')
         //router.push()
@@ -41,6 +41,16 @@ const hacerLogin = async () => {
     }
 }
 
+onMounted(() => {
+    if (authStore.usuario != null) {
+        console.log("Sesion Iniciada")
+        router.push('/principal')
+    }
+    else{
+        console.log("sesion no iniciada")
+
+    }
+})
 
 
 </script>

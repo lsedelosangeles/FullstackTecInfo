@@ -32,15 +32,17 @@ export const useAuthStore = defineStore(
         async obtenerUsuario() {
             try {
                 const response = await api.get('/api/user')
-                this.user = response.data
+                this.usuario = response.data
+                console.log(this.usuario)
             } catch (error) {
-                this.user = null
+                console.log(error)
+                this.usuario = null
             }
         },
 
         async logout() {
             await api.post('/logout')
-            this.user = null
+            this.usuario = null
         }
         
     }

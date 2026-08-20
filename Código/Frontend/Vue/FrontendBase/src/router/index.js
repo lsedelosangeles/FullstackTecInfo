@@ -1,6 +1,7 @@
 import Clientes from '@/views/Clientes.vue'
 import Inicio from '@/views/Inicio.vue'
 import Login from '@/views/Login.vue'
+import Principal from '@/views/Principal.vue'
 import Registro from '@/views/Registro.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -26,6 +27,11 @@ const router = createRouter({
       path:'/clientes',
       component:Clientes,
       name:'clientes'
+    },
+    {
+      path:'/principal',
+      component:Principal,
+      name:'principal'
     }
   ],
 })

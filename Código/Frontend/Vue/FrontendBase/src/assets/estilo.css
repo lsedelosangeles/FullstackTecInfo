@@ -90,6 +90,7 @@ h2{
     margin: 5px;
     color: #000;
     text-decoration: none;
+    overflow-y: scroll;
 }
 
 .boton:hover, .boton:focus{
